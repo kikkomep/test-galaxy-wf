@@ -46,6 +46,7 @@
                     "@id": "#a63790e9-b151-4e01-9af4-a184c1acb548"
                 }
             ],
+            "description": "this is the workflow description",
             "name": "MyGalaxy Workflow"
         },
         {
