@@ -43,7 +43,7 @@ push:
     # Monitor master. Notify only LifeMonitor (production instance) of changes.
     - name: "master"
       enable_notifications: true
-      lifemonitor_instance: production 
+      lifemonitor_instance: default 
       update_registries: []
 
 
