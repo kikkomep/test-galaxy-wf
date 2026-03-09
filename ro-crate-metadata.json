@@ -1,0 +1,92 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "datePublished": "2026-03-09T00:10:46+00:00",
+            "hasPart": [
+                {
+                    "@id": "test-data/"
+                },
+                {
+                    "@id": ".github/"
+                },
+                {
+                    "@id": ".lifemonitor.yaml"
+                },
+                {
+                    "@id": "my-workflow-test.yml"
+                },
+                {
+                    "@id": "my-workflow.ga"
+                },
+                {
+                    "@id": "README.md"
+                },
+                {
+                    "@id": "test-data/output_file.txt"
+                },
+                {
+                    "@id": "test-data/Input File.txt"
+                },
+                {
+                    "@id": ".github/workflows/"
+                },
+                {
+                    "@id": ".github/workflows/main.yml"
+                }
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "test-data/",
+            "@type": "Dataset"
+        },
+        {
+            "@id": ".github/",
+            "@type": "Dataset"
+        },
+        {
+            "@id": ".lifemonitor.yaml",
+            "@type": "File"
+        },
+        {
+            "@id": "my-workflow-test.yml",
+            "@type": "File"
+        },
+        {
+            "@id": "my-workflow.ga",
+            "@type": "File"
+        },
+        {
+            "@id": "README.md",
+            "@type": "File"
+        },
+        {
+            "@id": "test-data/output_file.txt",
+            "@type": "File"
+        },
+        {
+            "@id": "test-data/Input File.txt",
+            "@type": "File"
+        },
+        {
+            "@id": ".github/workflows/",
+            "@type": "Dataset"
+        },
+        {
+            "@id": ".github/workflows/main.yml",
+            "@type": "File"
+        }
+    ]
+}
