@@ -71,4 +71,4 @@ push:
     - name: "*.*.*"
       enable_notifications: true
       update_registries: ["wfhubdev"]
-      lifemonitor_instance: defaultx
+      lifemonitor_instance: default
