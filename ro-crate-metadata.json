@@ -46,7 +46,8 @@
                     "@id": "#42526fb9-a539-4fbc-b6fe-504f2a8d8d8c"
                 }
             ],
-            "name": "MyWorkflow"
+            "name": "MyWorkflow",
+            "description": "This is my first workflow"
         },
         {
             "@id": "ro-crate-metadata.json",
@@ -138,7 +139,8 @@
             "name": "Planemo",
             "url": {
                 "@id": "https://github.com/galaxyproject/planemo"
-            }
+            },
+            "engineVersion": "0.70"
         },
         {
             "@id": "test-data/",
