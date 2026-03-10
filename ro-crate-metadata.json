@@ -46,7 +46,8 @@
                     "@id": "#9c0deb2b-5622-4d4a-8992-94498c41c10d"
                 }
             ],
-            "name": "MyWorkflow"
+            "name": "MyWorkflow",
+            "description": "Workflow description"
         },
         {
             "@id": "ro-crate-metadata.json",
