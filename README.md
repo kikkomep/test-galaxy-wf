@@ -1,3 +1,3 @@
 # MyWorkflow
 
-Description of my workflow
+Description of my workflow: MyWorkflow
