@@ -43,10 +43,10 @@ push:
     #   update_registries: []
 
     # Monitor master. Notify only LifeMonitor (default instance) of changes.
-    #- name: "master"
-    #  enable_notifications: true
-    #  lifemonitor_instance: default 
-    #  update_registries: []
+    - name: "master"
+      enable_notifications: true
+      lifemonitor_instance: default 
+      update_registries: []
 
 
   tags:
