@@ -68,9 +68,9 @@ push:
     #  update_registries: []
 
     # Also recognize the tag names matching "*.*.*". For the rest, same rules as above.
-    #- name: "*.*.*"
-    #  enable_notifications: true
-    #  update_registries: ["wfhubdev"]
-    #  lifemonitor_instance: development
+    - name: "*.*.*"
+      enable_notifications: true
+      update_registries: ["wfhubdev"]
+      lifemonitor_instance: default
 
 
