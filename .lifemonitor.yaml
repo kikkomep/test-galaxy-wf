@@ -45,7 +45,7 @@ push:
     # Monitor master. Notify only LifeMonitor (default instance) of changes.
     - name: "master"
       enable_notifications: true
-      lifemonitor_instance: default
+      lifemonitor_instance: development
       update_registries: []
 
 
@@ -64,11 +64,11 @@ push:
     # workflow registries []
     - name: "v*.*.*"
       enable_notifications: true
-      lifemonitor_instance: default
+      lifemonitor_instance: development
       update_registries: []
 
     # Also recognize the tag names matching "*.*.*". For the rest, same rules as above.
     - name: "*.*.*"
       enable_notifications: true
       update_registries: ["wfhubdev"]
-      lifemonitor_instance: default
+      lifemonitor_instance: development
