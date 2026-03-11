@@ -39,13 +39,13 @@ push:
     #
     # - name: "develop"
     #   enable_notifications: true
-    #   lifemonitor_instance: default
+    #   lifemonitor_instance: 
     #   update_registries: []
 
     # Monitor master. Notify only LifeMonitor (default instance) of changes.
     - name: "master"
       enable_notifications: true
-      lifemonitor_instance: development
+      lifemonitor_instance: 
       update_registries: []
 
 
