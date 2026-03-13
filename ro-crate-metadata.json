@@ -45,7 +45,9 @@
                 {
                     "@id": "#60526cba-8b80-4c72-b6bf-4d3884ff8c20"
                 }
-            ]
+            ],
+            "description": "A test workflow for Galaxy, along with a test suite and test data.",
+            "license": "MIT"
         },
         {
             "@id": "ro-crate-metadata.json",
