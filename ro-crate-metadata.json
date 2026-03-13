@@ -1,13 +1,33 @@
 {
-    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@context": [
+        "https://w3id.org/ro/crate/1.1/context",
+        {
+            "GithubService": "https://w3id.org/ro/terms/test#GithubService",
+            "JenkinsService": "https://w3id.org/ro/terms/test#JenkinsService",
+            "PlanemoEngine": "https://w3id.org/ro/terms/test#PlanemoEngine",
+            "TestDefinition": "https://w3id.org/ro/terms/test#TestDefinition",
+            "TestInstance": "https://w3id.org/ro/terms/test#TestInstance",
+            "TestService": "https://w3id.org/ro/terms/test#TestService",
+            "TestSuite": "https://w3id.org/ro/terms/test#TestSuite",
+            "TravisService": "https://w3id.org/ro/terms/test#TravisService",
+            "definition": "https://w3id.org/ro/terms/test#definition",
+            "engineVersion": "https://w3id.org/ro/terms/test#engineVersion",
+            "instance": "https://w3id.org/ro/terms/test#instance",
+            "resource": "https://w3id.org/ro/terms/test#resource",
+            "runsOn": "https://w3id.org/ro/terms/test#runsOn"
+        }
+    ],
     "@graph": [
         {
             "@id": "./",
             "@type": "Dataset",
-            "datePublished": "2026-03-13T13:34:56+00:00",
+            "datePublished": "2026-03-13T14:59:56+00:00",
             "hasPart": [
                 {
                     "@id": "my-workflow.ga"
+                },
+                {
+                    "@id": "my-workflow-test.yml"
                 },
                 {
                     "@id": "test-data/"
@@ -60,6 +80,24 @@
             "name": "Galaxy",
             "url": {
                 "@id": "https://galaxyproject.org/"
+            }
+        },
+        {
+            "@id": "my-workflow-test.yml",
+            "@type": [
+                "File",
+                "TestDefinition"
+            ],
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/terms/test#PlanemoEngine"
+            }
+        },
+        {
+            "@id": "https://w3id.org/ro/terms/test#PlanemoEngine",
+            "@type": "SoftwareApplication",
+            "name": "Planemo",
+            "url": {
+                "@id": "https://github.com/galaxyproject/planemo"
             }
         },
         {
