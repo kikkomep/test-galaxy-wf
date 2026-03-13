@@ -43,7 +43,7 @@ push:
     # Monitor master.
     - name: "master"
       enable_notifications: true
-      lifemonitor_instance: "my-lifemonitor-instance"
+      lifemonitor_instance: "default"
       update_registries: []
 
 
@@ -66,5 +66,5 @@ push:
     # Also recognize the tag names matching "*.*.*". For the rest, same rules as above.
     - name: "*.*.*"
       enable_notifications: true
-      lifemonitor_instance: "my-lifemonitor-instance"
-      update_registries: []
+      lifemonitor_instance: "default"
+      update_registries: ["wfhubdev"]
