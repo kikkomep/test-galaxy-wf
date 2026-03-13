@@ -40,7 +40,8 @@
             "mainEntity": {
                 "@id": "my-workflow.ga"
             },
-            "name": "test-galaxy-wf"
+            "name": "test-galaxy-wf",
+            "description": "My workflow descriptionn"
         },
         {
             "@id": "ro-crate-metadata.json",
@@ -90,7 +91,8 @@
             ],
             "conformsTo": {
                 "@id": "https://w3id.org/ro/terms/test#PlanemoEngine"
-            }
+            },
+            "engineVersion": "0.7.0"
         },
         {
             "@id": "https://w3id.org/ro/terms/test#PlanemoEngine",
