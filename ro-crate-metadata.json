@@ -46,7 +46,8 @@
                     "@id": "#d4b7700c-81f9-42e0-aa78-14224d70737e"
                 }
             ],
-            "name": "MyWorkflow"
+            "name": "MyWorkflow",
+            "description": "My workflow"
         },
         {
             "@id": "ro-crate-metadata.json",
@@ -130,7 +131,8 @@
             ],
             "conformsTo": {
                 "@id": "https://w3id.org/ro/terms/test#PlanemoEngine"
-            }
+            },
+            "engineVersion": "0.7.0"
         },
         {
             "@id": "https://w3id.org/ro/terms/test#PlanemoEngine",
@@ -138,7 +140,8 @@
             "name": "Planemo",
             "url": {
                 "@id": "https://github.com/galaxyproject/planemo"
-            }
+            },
+            "engineVersion": "0.70"
         },
         {
             "@id": "test-data/",
