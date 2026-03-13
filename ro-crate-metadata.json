@@ -23,7 +23,6 @@
             "@type": "Dataset",
             "datePublished": "2026-03-13T11:08:02+00:00",
             "license": "MIT",
-            "datePublished": "2026-03-10T22:14:55+00:00",
             "hasPart": [
                 {
                     "@id": "my-workflow.ga"
@@ -63,7 +62,7 @@
                 {
                     "@id": "#9c0deb2b-5622-4d4a-8992-94498c41c10d"
                 }
-            ],
+            ]
         },
         {
             "@id": "my-workflow.ga",
