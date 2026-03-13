@@ -1,0 +1,76 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "datePublished": "2026-03-13T13:34:56+00:00",
+            "hasPart": [
+                {
+                    "@id": "my-workflow.ga"
+                },
+                {
+                    "@id": "test-data/"
+                },
+                {
+                    "@id": "README.md"
+                }
+            ],
+            "isBasedOn": "https://github.com/kikkomep/test-galaxy-wf.git",
+            "mainEntity": {
+                "@id": "my-workflow.ga"
+            },
+            "name": "test-galaxy-wf"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": [
+                {
+                    "@id": "https://w3id.org/ro/crate/1.1"
+                },
+                {
+                    "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+                }
+            ]
+        },
+        {
+            "@id": "my-workflow.ga",
+            "@type": [
+                "File",
+                "SoftwareSourceCode",
+                "ComputationalWorkflow"
+            ],
+            "name": "test-galaxy-wf",
+            "programmingLanguage": {
+                "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy"
+            },
+            "url": "https://github.com/kikkomep/test-galaxy-wf.git",
+            "version": "main"
+        },
+        {
+            "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+            "@type": "ComputerLanguage",
+            "identifier": {
+                "@id": "https://galaxyproject.org/"
+            },
+            "name": "Galaxy",
+            "url": {
+                "@id": "https://galaxyproject.org/"
+            }
+        },
+        {
+            "@id": "test-data/",
+            "@type": "Dataset",
+            "description": "Data files for testing the workflow"
+        },
+        {
+            "@id": "README.md",
+            "@type": "File",
+            "description": "Workflow documentation"
+        }
+    ]
+}
