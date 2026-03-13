@@ -21,8 +21,7 @@
         {
             "@id": "./",
             "@type": "Dataset",
-            "datePublished": "2026-03-13T11:08:02+00:00",
-            "license": "MIT",
+            "datePublished": "2026-03-13T10:44:19+00:00",
             "hasPart": [
                 {
                     "@id": "my-workflow.ga"
@@ -37,12 +36,18 @@
                     "@id": "README.md"
                 }
             ],
-            "isBasedOn": "https://github.com/kikkomep/test-galaxy-wf.git",
+            "isBasedOn": "https://github.com/kikkomep/test-galaxy-wf",
+            "license": "MIT",
             "mainEntity": {
                 "@id": "my-workflow.ga"
             },
-            "name": "test-galaxy-wf",
-            "description": "My workflow descriptionn"
+            "mentions": [
+                {
+                    "@id": "#d4b7700c-81f9-42e0-aa78-14224d70737e"
+                }
+            ],
+            "name": "MyWorkflow",
+            "description": "My workflow"
         },
         {
             "@id": "ro-crate-metadata.json",
@@ -57,28 +62,7 @@
                 {
                     "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
                 }
-            ],
-            "mentions": [
-                {
-                    "@id": "#9c0deb2b-5622-4d4a-8992-94498c41c10d"
-                }
             ]
-        },
-        {
-            "@id": "#9c0deb2b-5622-4d4a-8992-94498c41c10d",
-            "@type": "TestSuite",
-            "definition": {
-                "@id": "my-workflow-test.yml"
-            },
-            "instance": [
-                {
-                    "@id": "#33d35d81-92cc-4fd6-936f-0fc05799ad61"
-                }
-            ],
-            "mainEntity": {
-                "@id": "my-workflow.ga"
-            },
-            "name": "Test suite for MyWorkflow"
         },
         {
             "@id": "my-workflow.ga",
@@ -87,12 +71,12 @@
                 "SoftwareSourceCode",
                 "ComputationalWorkflow"
             ],
-            "name": "test-galaxy-wf",
+            "name": "MyWorkflow",
             "programmingLanguage": {
                 "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy"
             },
-            "url": "https://github.com/kikkomep/test-galaxy-wf.git",
-            "version": "main"
+            "url": "https://github.com/kikkomep/test-galaxy-wf",
+            "version": "master"
         },
         {
             "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
@@ -103,6 +87,40 @@
             "name": "Galaxy",
             "url": {
                 "@id": "https://galaxyproject.org/"
+            }
+        },
+        {
+            "@id": "#d4b7700c-81f9-42e0-aa78-14224d70737e",
+            "@type": "TestSuite",
+            "definition": {
+                "@id": "my-workflow-test.yml"
+            },
+            "instance": [
+                {
+                    "@id": "#b87e6943-1788-46ff-8dfb-8d25fd2a5aaa"
+                }
+            ],
+            "mainEntity": {
+                "@id": "my-workflow.ga"
+            },
+            "name": "Test suite for MyWorkflow"
+        },
+        {
+            "@id": "#b87e6943-1788-46ff-8dfb-8d25fd2a5aaa",
+            "@type": "TestInstance",
+            "name": "GitHub Actions workflow for testing MyWorkflow",
+            "resource": "repos/kikkomep/test-galaxy-wf/actions/workflows/main.yml",
+            "runsOn": {
+                "@id": "https://w3id.org/ro/terms/test#GithubService"
+            },
+            "url": "https://api.github.com"
+        },
+        {
+            "@id": "https://w3id.org/ro/terms/test#GithubService",
+            "@type": "TestService",
+            "name": "Github Actions",
+            "url": {
+                "@id": "https://github.com"
             }
         },
         {
@@ -122,7 +140,8 @@
             "name": "Planemo",
             "url": {
                 "@id": "https://github.com/galaxyproject/planemo"
-            }
+            },
+            "engineVersion": "0.70"
         },
         {
             "@id": "test-data/",
