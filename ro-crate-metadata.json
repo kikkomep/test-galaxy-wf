@@ -58,7 +58,12 @@
                 {
                     "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
                 }
-            ]
+            ],
+            "mentions": [
+                {
+                    "@id": "#9c0deb2b-5622-4d4a-8992-94498c41c10d"
+                }
+            ],
         },
         {
             "@id": "my-workflow.ga",
