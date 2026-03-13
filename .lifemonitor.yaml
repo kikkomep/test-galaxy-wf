@@ -43,7 +43,7 @@ push:
     # Monitor master.
     - name: "master"
       enable_notifications: true
-      lifemonitor_instance: "default"
+      lifemonitor_instance: "development"
       update_registries: []
 
 
