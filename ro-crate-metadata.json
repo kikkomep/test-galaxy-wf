@@ -40,7 +40,12 @@
             "mainEntity": {
                 "@id": "my-workflow.ga"
             },
-            "name": "test-galaxy-wf"
+            "name": "test-galaxy-wf",
+            "mentions": [
+                {
+                    "@id": "#60526cba-8b80-4c72-b6bf-4d3884ff8c20"
+                }
+            ]
         },
         {
             "@id": "ro-crate-metadata.json",
@@ -81,6 +86,22 @@
             "url": {
                 "@id": "https://galaxyproject.org/"
             }
+        },
+        {
+            "@id": "#60526cba-8b80-4c72-b6bf-4d3884ff8c20",
+            "@type": "TestSuite",
+            "definition": {
+                "@id": "my-workflow-test.yml"
+            },
+            "instance": [
+                {
+                    "@id": "#5a93e266-a7ed-4074-bee7-12040965bb0e"
+                }
+            ],
+            "mainEntity": {
+                "@id": "my-workflow.ga"
+            },
+            "name": "Test suite for MyWorkflow"
         },
         {
             "@id": "my-workflow-test.yml",
