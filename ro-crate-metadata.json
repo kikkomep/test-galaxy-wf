@@ -1,10 +1,27 @@
 {
-    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@context": [
+        "https://w3id.org/ro/crate/1.1/context",
+        {
+            "GithubService": "https://w3id.org/ro/terms/test#GithubService",
+            "JenkinsService": "https://w3id.org/ro/terms/test#JenkinsService",
+            "PlanemoEngine": "https://w3id.org/ro/terms/test#PlanemoEngine",
+            "TestDefinition": "https://w3id.org/ro/terms/test#TestDefinition",
+            "TestInstance": "https://w3id.org/ro/terms/test#TestInstance",
+            "TestService": "https://w3id.org/ro/terms/test#TestService",
+            "TestSuite": "https://w3id.org/ro/terms/test#TestSuite",
+            "TravisService": "https://w3id.org/ro/terms/test#TravisService",
+            "definition": "https://w3id.org/ro/terms/test#definition",
+            "engineVersion": "https://w3id.org/ro/terms/test#engineVersion",
+            "instance": "https://w3id.org/ro/terms/test#instance",
+            "resource": "https://w3id.org/ro/terms/test#resource",
+            "runsOn": "https://w3id.org/ro/terms/test#runsOn"
+        }
+    ],
     "@graph": [
         {
             "@id": "./",
             "@type": "Dataset",
-            "datePublished": "2026-03-16T09:13:04+00:00",
+            "datePublished": "2026-03-16T09:21:18+00:00",
             "hasPart": [
                 {
                     "@id": "my-workflow.ga"
@@ -20,8 +37,13 @@
             "mainEntity": {
                 "@id": "my-workflow.ga"
             },
+            "mentions": [
+                {
+                    "@id": "#42bbd5f6-1173-429c-8418-dc011412c790"
+                }
+            ],
             "name": "test-galaxy-wf",
-            "description": "this is the workflow description",
+            "description": "This is the description",
             "license": "MIT"
         },
         {
@@ -61,6 +83,37 @@
             "name": "Galaxy",
             "url": {
                 "@id": "https://galaxyproject.org/"
+            }
+        },
+        {
+            "@id": "#42bbd5f6-1173-429c-8418-dc011412c790",
+            "@type": "TestSuite",
+            "instance": [
+                {
+                    "@id": "#148182ca-addb-4fb8-a686-e2ecc7607a43"
+                }
+            ],
+            "mainEntity": {
+                "@id": "my-workflow.ga"
+            },
+            "name": "Test suite for test-galaxy-wf"
+        },
+        {
+            "@id": "#148182ca-addb-4fb8-a686-e2ecc7607a43",
+            "@type": "TestInstance",
+            "name": "GitHub Actions workflow for testing test-galaxy-wf",
+            "resource": "repos/kikkomep/test-galaxy-wf.git/actions/workflows/main.yml",
+            "runsOn": {
+                "@id": "https://w3id.org/ro/terms/test#GithubService"
+            },
+            "url": "https://api.github.com"
+        },
+        {
+            "@id": "https://w3id.org/ro/terms/test#GithubService",
+            "@type": "TestService",
+            "name": "Github Actions",
+            "url": {
+                "@id": "https://github.com"
             }
         },
         {
