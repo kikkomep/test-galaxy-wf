@@ -130,7 +130,8 @@
             ],
             "conformsTo": {
                 "@id": "https://w3id.org/ro/terms/test#PlanemoEngine"
-            }
+            },
+            "engineVersion": "0.70"
         },
         {
             "@id": "https://w3id.org/ro/terms/test#PlanemoEngine",
