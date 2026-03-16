@@ -20,7 +20,9 @@
             "mainEntity": {
                 "@id": "my-workflow.ga"
             },
-            "name": "test-galaxy-wf"
+            "name": "test-galaxy-wf",
+            "description": "this is the workflow description",
+            "license": "MIT"
         },
         {
             "@id": "ro-crate-metadata.json",
