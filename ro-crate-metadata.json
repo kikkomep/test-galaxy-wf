@@ -21,10 +21,13 @@
         {
             "@id": "./",
             "@type": "Dataset",
-            "datePublished": "2026-03-16T09:21:18+00:00",
+            "datePublished": "2026-03-16T09:37:19+00:00",
             "hasPart": [
                 {
                     "@id": "my-workflow.ga"
+                },
+                {
+                    "@id": "my-workflow-test.yml"
                 },
                 {
                     "@id": "test-data/"
@@ -39,11 +42,11 @@
             },
             "mentions": [
                 {
-                    "@id": "#42bbd5f6-1173-429c-8418-dc011412c790"
+                    "@id": "#373a0c9c-8b63-4816-b15a-799b77e176d1"
                 }
             ],
             "name": "test-galaxy-wf",
-            "description": "This is the description",
+            "description": "The workflow description",
             "license": "MIT"
         },
         {
@@ -86,11 +89,14 @@
             }
         },
         {
-            "@id": "#42bbd5f6-1173-429c-8418-dc011412c790",
+            "@id": "#373a0c9c-8b63-4816-b15a-799b77e176d1",
             "@type": "TestSuite",
+            "definition": {
+                "@id": "my-workflow-test.yml"
+            },
             "instance": [
                 {
-                    "@id": "#148182ca-addb-4fb8-a686-e2ecc7607a43"
+                    "@id": "#638b83d1-2a26-4449-b520-1efb1eccaa5e"
                 }
             ],
             "mainEntity": {
@@ -99,7 +105,7 @@
             "name": "Test suite for test-galaxy-wf"
         },
         {
-            "@id": "#148182ca-addb-4fb8-a686-e2ecc7607a43",
+            "@id": "#638b83d1-2a26-4449-b520-1efb1eccaa5e",
             "@type": "TestInstance",
             "name": "GitHub Actions workflow for testing test-galaxy-wf",
             "resource": "repos/kikkomep/test-galaxy-wf.git/actions/workflows/main.yml",
@@ -114,6 +120,24 @@
             "name": "Github Actions",
             "url": {
                 "@id": "https://github.com"
+            }
+        },
+        {
+            "@id": "my-workflow-test.yml",
+            "@type": [
+                "File",
+                "TestDefinition"
+            ],
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/terms/test#PlanemoEngine"
+            }
+        },
+        {
+            "@id": "https://w3id.org/ro/terms/test#PlanemoEngine",
+            "@type": "SoftwareApplication",
+            "name": "Planemo",
+            "url": {
+                "@id": "https://github.com/galaxyproject/planemo"
             }
         },
         {
