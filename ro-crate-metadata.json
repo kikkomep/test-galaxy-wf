@@ -108,7 +108,7 @@
             "@id": "#638b83d1-2a26-4449-b520-1efb1eccaa5e",
             "@type": "TestInstance",
             "name": "GitHub Actions workflow for testing test-galaxy-wf",
-            "resource": "repos/kikkomep/test-galaxy-wf.git/actions/workflows/main.yml",
+            "resource": "repos/kikkomep/test-galaxy-wf/actions/workflows/main.yml",
             "runsOn": {
                 "@id": "https://w3id.org/ro/terms/test#GithubService"
             },
