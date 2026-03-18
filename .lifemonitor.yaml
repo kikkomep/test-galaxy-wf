@@ -37,7 +37,7 @@ push:
     #
     # - name: "develop"
     #   enable_notifications: true
-    #   lifemonitor_instance: development
+    #   lifemonitor_instance: default
     #   update_registries: []
 
     # Monitor master.
@@ -54,17 +54,17 @@ push:
     # Example:
     # - name: "v*.*.*"  # e.g,. v1.0.2
     #   enable_notifications: true
-    #   lifemonitor_instance: development
+    #   lifemonitor_instance: default
     #   update_registries: []
 
     # Recognize tags with names matching "v*.*.*" as new releases.
     - name: "v*.*.*"
       enable_notifications: true
-      lifemonitor_instance: "development"
+      lifemonitor_instance: "default"
       update_registries: [wfhubdev]
 
     # Also recognize the tag names matching "*.*.*". For the rest, same rules as above.
     - name: "*.*.*"
       enable_notifications: true
-      lifemonitor_instance: "development"
+      lifemonitor_instance: "default"
       update_registries: [wfhubdev]
